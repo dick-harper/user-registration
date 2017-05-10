@@ -1,0 +1,49 @@
+{
+  "name": "user-registration",
+  "version": "1.0.0",
+  "description": "Sample application for user registration using the MEAN stack",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha ./test/**/*.text.js",
+    "start": "nodemon ./server/server.js",
+    "lint": "eslint --config .eslintrc.json --format compact ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dick-harper/user-registration.git"
+  },
+  "keywords": [
+    "MEAN",
+    "NodeJS",
+    "ExpressJS",
+    "AngularJS",
+    "MongoDb",
+    "Javascript",
+    "Mocha"
+  ],
+  "author": "Richard Harper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dick-harper/user-registration/issues"
+  },
+  "homepage": "https://github.com/dick-harper/user-registration#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-defaults": "^9.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.3.0",
+    "nodemon": "^1.11.0"
+  }
+}
