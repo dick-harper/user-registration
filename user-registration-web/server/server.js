@@ -5,5 +5,5 @@ var express = require('./config/express.config.js');
 const port = process.env.PORT || 3000;
 
 express().listen(port, function () {
-  console.log('listening on port ' + port);
+  console.log(`listening on port ${port}`);
 });
