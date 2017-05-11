@@ -1,17 +1,9 @@
-const express = require('express');
-const path = require('path');
-
-const app = express();
+'use strict';
+var express = require('./config/express.config.js');
 
 // TODO configuration per environment
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-app.use(express.static('./client'));
-
-app.get('/', function (req, res) {
-  res.send('test');
-});
-
-app.listen(port, function () {
+express().listen(port, function () {
   console.log('listening on port ' + port);
 });
